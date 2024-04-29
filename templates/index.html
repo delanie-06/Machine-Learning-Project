@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="number"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        #result {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Calorie Content Prediction</h1>
+        <form action="/predict" method="post">
+            <label for="cal_fat">Calories from Fat:</label>
+            <input type="number" id="cal_fat" name="cal_fat" required><br>
+
+            <label for="total_fat">Total Fat (g):</label>
+            <input type="number" id="total_fat" name="total_fat" required><br>
+
+            <label for="trans_fat">Trans Fat (g):</label>
+            <input type="number" id="trans_fat" name="trans_fat" required><br>
+
+            <label for="sat_fat">Saturated Fat (g):</label>
+            <input type="number" id="sat_fat" name="sat_fat" required><br>
+
+            <label for="cholestrol">Cholesterol:</label>
+            <input type="number" id="cholestrol" name="cholestrol" required><br>
+
+            <label for="sodium">Sodium:</label>
+            <input type="number" id="sodium" name="sodium" required><br>
+
+            <label for="total_carb">Total Carb:</label>
+            <input type="number" id="total_carb" name="total_carb" required><br>
+
+            <label for="fiber">Fiber:</label>
+            <input type="number" id="fiber" name="fiber" required><br>
+
+            <label for="sugar">Sugar (g):</label>
+            <input type="number" id="sugar" name="sugar" required><br>
+
+            <label for="protein">Protein:</label>
+            <input type="number" id="protein" name="protein" required><br>
+
+            <label for="vit_a">Vitamin A:</label>
+            <input type="number" id="vit_a" name="vit_a" required><br>
+
+            <label for="vit_c">Vitamin C:</label>
+            <input type="number" id="vit_c" name="vit_c" required><br>
+
+            <label for="calcium">Calcium:</label>
+            <input type="number" id="calcium" name="calcium" required><br>
+
+            <input type="submit" value="Predict">
+        </form>
+        <div id="result">
+            {% print(prediction) %}
+        </div>
+    </div>
+</body>
+</html>
+    
