@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: white;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
@@ -9,8 +9,7 @@ body {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
-    /* color: #141010; */
-    background-color: white;
+    background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -41,7 +40,7 @@ input[type="submit"] {
 
 input[type="submit"] {
     background-color: #4caf50;
-    color: #c51212;
+    color: #fff;
     cursor: pointer;
 }
 
