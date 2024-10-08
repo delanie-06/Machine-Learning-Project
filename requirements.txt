@@ -1,7 +1,0 @@
-flask
-pickle
-json
-pandas
-numpy
-matplotlib
-scikit-learn
